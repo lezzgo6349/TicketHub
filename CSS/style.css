@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Just Me Again Down Here';
+    src: url('../Fonts/JustMeAgainDownHere.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.subtitle {
+  font-family: 'Just Me Again Down Here';
+  font-size: 60px;
+  text-align: center;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../Fonts/Inter-Regular.woff2') format('woff2'),
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+  --bs-font-sans-serif: 'Inter', sans-serif;
+}
+
+
+
+
+

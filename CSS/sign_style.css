@@ -1,0 +1,40 @@
+body{
+    background-color: #1A1A40;
+}
+
+
+.btn {
+    background-color: #1A1A40;
+    color: white;
+    height: 50px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover{
+    color: white;
+    transform: scale(1.05);
+    background-color: #FF2E63;
+}
+
+.back-btn{
+    margin-right: 480px;
+    color: black;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.back-btn:hover{
+    transform: scale(1.06);
+    color: #ff2e63;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: #ff2e63;
+}
+
+a:hover{
+    text-decoration: underline;
+}

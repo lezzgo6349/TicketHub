@@ -1,0 +1,119 @@
+body {
+            background-color: #1A1A40;
+            color: #F1F1F1;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /*container*/
+        .main-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-box {
+            background-color: #e0e1dd;
+            color: #1A1A40;
+            padding: 40px;
+            border-radius: 20px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        /*btn*/
+        .btn-custom {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 30px;
+            border: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-user {
+            background-color: #1A1A40;
+            color: #fff;
+        }
+
+        .btn-user:hover {
+            background-color: #FF2E63;
+            color: #F1F1F1;
+            transform: scale(1.05);
+        }
+
+        .btn-admin {
+            background-color: #6C757D;
+            color: #fff;
+        }
+
+        .btn-admin:hover {
+            color: #F1F1F1;
+            background-color: #FF2E63;
+            transform: scale(1.05);
+        }
+
+
+/* TITLE LAYOUT */
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #0D1B2a;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+:root {
+    --pink: #ff2e63;
+    --teal: #08d9d6;
+}
+
+/* TEXT */
+#title h2 {
+    margin-bottom: 0;
+    font-weight: bold;
+    animation: ledTextSwap 3s infinite steps(1);
+}
+
+/* ICON */
+#title img {
+    width: 55px;
+    height: 55px;
+    animation: ledIconSwap 3s infinite steps(1);
+}
+
+/* TEXT (LED swap) */
+@keyframes ledTextSwap {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        color: var(--pink);
+    }
+
+    20%, 24%, 55% {
+        color: black;
+    }
+
+    60%, 80% {
+        color: var(--teal);
+    }
+}
+
+/* ICON (LED swap) */
+@keyframes ledIconSwap {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg)  ;
+    }
+
+    20%, 24%, 55% {
+    filter: brightness(0);
+    }
+
+    60%, 80% {
+        filter: invert(24%) sepia(89%) saturate(4155%) hue-rotate(331deg);
+    }
+}

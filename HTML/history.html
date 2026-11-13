@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TicketHub | History</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="../media/tickets-two.svg">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/navstyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/homepage_style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/table_style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/history.css">
+</head>
+
+<body class="page-app">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+            <div id="logo">
+                <a class="navbar-brand fw-bold active" href="homepage.html"><img src="../media/tickets-two.svg">TicketHub</a>
+            </div>
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <div id="concert">
+                        <a class="nav-link " href="homepage.html"><img src="../media/entertainment.svg"> Concerts</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <div id="History">
+                        <a class="nav-link active" aria-current="page" href="history.html"><img src="../media/history.svg">
+                            History </a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <div id="Contact">
+                        <a class="nav-link " href="contact.html"><img src="../media/Email.svg">
+                            Contact Us </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <div id="account">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img src="../media/Peoples.svg"> Account
+                        </a>
+                        <ul class="dropdown-menu dropdown-custom">
+                            <li>
+                                <h6 id="welcomeUser" style="color: #08d9d6; text-align: center;"></h6>
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <h1>Transaction history</h1>
+            <p class="lead mb-0">Track pending requests, approvals, and download your ticket when approved.</p>
+        </div>
+    </header>
+
+    <div class="container page-shell">
+        <div id="historyList" class="row g-3"></div>
+    </div>
+
+    <div id="qrcode" style="display:none;"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="../JS/ticketStore.js"></script>
+    <script src="../JS/ticketPdf.js"></script>
+    <script src="../JS/history.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

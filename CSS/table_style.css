@@ -1,0 +1,88 @@
+body.page-app {
+    background-color: #e0e1dd;
+    min-height: 100vh;
+}
+
+.page-hero {
+    background-color: #1a1a40;
+    color: #f1f1f1;
+    padding: 2rem 0 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.page-hero h1 {
+    font-family: "Just Me Again Down Here", cursive, serif;
+    font-size: 2.75rem;
+    margin-bottom: 0.35rem;
+}
+
+.page-hero .lead {
+    color: rgba(241, 241, 241, 0.85);
+    font-size: 1rem;
+}
+
+.page-shell {
+    padding-bottom: 3rem;
+}
+
+.card.shadow-sm {
+    border: none;
+    border-radius: 12px;
+}
+
+.custom-btn {
+    background-color: #1a1a40;
+    color: #f1f1f1;
+    border: 2px solid skyblue;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover {
+    background-color: #ff2e63;
+    color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.payment-option {
+    cursor: pointer;
+    padding: 10px 14px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.payment-option.active {
+    border-color: #08d9d6;
+    background: #e8fbfa;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.admin-toolbar .btn-outline-light {
+    border-color: rgba(241, 241, 241, 0.5);
+    color: #f1f1f1;
+}
+
+.admin-toolbar .btn-outline-light:hover {
+    background: #ff2e63;
+    border-color: #ff2e63;
+    color: #fff;
+}
+
+.table-wrap {
+    background: #fff;
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.06);
+}
+
+.clickable-row {
+    cursor: pointer;
+}
+
+.clickable-row:hover {
+    background-color: #f2f2f2;
+}

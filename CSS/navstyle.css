@@ -1,0 +1,236 @@
+body {
+    padding-top: 90px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 50px;
+}
+
+.navbar-brand{
+    margin-left: 50px;
+
+}
+.custom-navbar{
+    background-color: #0D1B2a;
+}
+#logo a{
+    display: inline-block;
+    color: #08d9d6;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#logo a:hover{
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#logo img{
+    filter: invert(24%) sepia(89%) saturate(4155%) hue-rotate(331deg) brightness(101%) contrast(102%);
+    transition: filter 0s ease;
+}
+
+#logo a:hover img{
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+
+}
+
+
+
+/*CONCERT*/
+#concert .nav-link {
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#concert .nav-link.active {
+    color: #F1F1F1;
+}
+
+    /*Active*/
+#concert .nav-link.active img {
+    filter: brightness(0) invert(1);
+}
+
+#concert .nav-link.active:hover {
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#concert .nav-link.active:hover img {
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+}
+
+    /*Not Active*/
+
+#concert .nav-link {
+    color: #08d9d6;
+}
+
+#concert .nav-link img {
+    filter: invert(24%) sepia(89%) saturate(4155%) hue-rotate(331deg) brightness(101%) contrast(102%);
+}
+
+#concert .nav-link:hover{
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#concert .nav-link:hover img{
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+
+}
+
+
+
+/* ACCOUNT */
+#account .nav-link {
+    display: inline-block;
+    color: #08d9d6;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+    /* Active */
+#account .nav-link.active {
+    color: #F1F1F1;
+}
+
+#account .nav-link.active img {
+    filter: brightness(0) invert(1);
+}
+
+#account .nav-link.active:hover {
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#account .nav-link.active:hover img {
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+}
+
+    /* Not Active */
+#account .nav-link img {
+    filter: invert(24%) sepia(89%) saturate(4155%) hue-rotate(331deg) brightness(101%) contrast(102%);
+}
+
+#account .nav-link:hover {
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#account .nav-link:hover img {
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+}
+
+    /*dropdown*/
+.dropdown-custom{
+    background: #24244E;
+    border: none;
+}
+
+.dropdown-custom .dropdown-item {
+    color: #08d9d6;
+    background: none;
+    transition: color 0.2s ease, padding-left 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-custom .dropdown-item:hover {
+    color: #FF2E63;
+    padding-left: 50px;
+    transform: scale(1.05   );
+}
+
+    /*Active*/
+.dropdown-custom .dropdown-item.active {
+    color: #F1F1F1;
+    background: none;
+}
+
+
+/*History*/
+
+
+    /*Active*/
+#History .nav-link {
+display: inline-block;
+transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#History .nav-link.active img {
+    filter: brightness(0) invert(1);
+}
+#History .nav-link.active{
+    color: #F1F1F1;
+}
+#History .nav-link.active:hover {
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#History .nav-link.active:hover img {
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+}
+
+#History .nav-link{
+  color: #08d9d6;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#History img{
+    filter: invert(24%) sepia(89%) saturate(4155%) hue-rotate(331deg) brightness(101%) contrast(102%);
+
+}
+
+#History .nav-link:hover{
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#History:hover img{
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+
+}
+
+
+
+/*Contact US*/
+    /*Active*/
+#Contact .nav-link {
+display: inline-block;
+transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#Contact .nav-link.active img {
+    filter: brightness(0) invert(1);
+}
+#Contact .nav-link.active{
+    color: #F1F1F1;
+}
+#Contact .nav-link.active:hover {
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#Contact .nav-link.active:hover img {
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+}
+
+#Contact .nav-link{
+  color: #08d9d6;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#Contact img{
+    filter: invert(24%) sepia(89%) saturate(4155%) hue-rotate(331deg) brightness(101%) contrast(102%);
+
+}
+
+#Contact .nav-link:hover{
+    color: #FF2E63;
+    transform: scale(1.05);
+}
+
+#Contact:hover img{
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+
+}
+

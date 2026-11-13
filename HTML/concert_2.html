@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TicketHub | Metallic Vibes</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!--FavIcon-->
+    <link rel="icon" type="image/svg+xml" href="../media/tickets-two.svg">
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/navstyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/concert.css">
+</head>
+
+<body data-concert-id="concert_2" data-event-name="Metallic Vibes" data-concert-date="Mon, March 30, 2026 - 7:00 PM" data-venue="Tupi Gymnasium">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+            <div id="logo">
+                <a class="navbar-brand fw-bold active" href="homepage.html"><img src="../media/tickets-two.svg">TicketHub</a>
+            </div>
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <div id="concert">
+                        <a class="nav-link " aria-current="page" href="homepage.html"><img src="../media/entertainment.svg"> Concerts</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <div id="History">
+                        <a class="nav-link " href="history.html"><img src="../media/history.svg">
+                            History </a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <div id="Contact">
+                        <a class="nav-link " href="contact.html"><img src="../media/Email.svg">
+                            Contact Us </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <div id="account">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img src="../media/Peoples.svg"> Account
+                        </a>
+                        <ul class="dropdown-menu dropdown-custom">
+                            <li>
+                                <h6 id="welcomeUser" style="color: #08d9d6; text-align: center;"></h6>
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <a href="homepage.html" class="text-decoration-none fs-5 fw-light mt-3 mb-3 ms-5 d-inline-block back-btn">← Back to Concerts</a>
+    <!--Details-->
+    <div class="container-fluid ms-5 d-flex gap-5">
+        <img src="../media/concert_2.png" class="img-fluid ">
+        <div>
+            <div class="card rounded-pill ms-5 mb-5" style="background-color: #1A1A40; width: 10rem; height: 5rem ;">
+                <h1 class=" text-center text-white mt-3">Metal</h1>
+            </div>
+            <div class="ms-5 ">
+                <h1 class=" fw-bold text-black mb-5">Metallic Vibes</h1>
+                <h2 class="mt-4 mb-5"><img src="../media/Song.svg">&nbsp;Song</h2>
+                <h2 class="mt-4 mb-5"><img src="../media/calendar.svg">&nbsp;Mon, March 30, 2026</h2>
+                <h2 class="mt-4 mb-5"><img src="../media/Clock.svg">&nbsp;7:00pm</h2>
+                <h2 class="mt-4 mb-5"><img src="../media/location.svg">&nbsp;Tupi, Gymnasium</h2>
+                <h2 class="mt-4 mb-5"><img src="../media/Tickets.svg">&nbsp;<span style="color:#5C5FCC; font-weight: bold;">Standard</span> = ₱250.00, <span style="color:#3ED571; font-weight: bold;">Premium</span> = ₱475.00, <span style="color:#FFA500; font-weight: bold;">VIP</span> = ₱650.00</h2>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+    <!--Seats-->
+    <div class="container-fluid text-center" style="margin-left: 50px">
+        <h1 class="fw-bold text-black">Select Your Seat/s</h1>
+        <br>
+        <h4 class="mt-4 mb-5">
+            <img src="../media/VIP.svg" style="margin-left: 50px">&nbsp;VIP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="../media/Premium.svg">&nbsp;Premium&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="../media/Available.svg">&nbsp;Standard&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="../media/Reserved.svg">&nbsp;Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="../media/Seats.svg">&nbsp;Selected&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </h4>
+        <img src="../media/Stage.svg">
+    </div>
+    <!--Select Seats-->
+    <div class="container-fluid seat-page">
+    </div>
+    <div class="seat-wrapper">
+        <div class="seat-section">
+            <h4 class="fw-bold text-black">Section 1</h4><br><br>
+            <div class="seat-grid ">
+                <div class="F">
+                    <h5 class="fw-bold text-black mb-4">F</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="E" style="margin-top: 10px;">
+                    <h5 class="fw-bold text-black mb-4">E</h5>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="D" style="margin-top: 20px">
+                    <h5 class="fw-bold text-black mb-4">D</h5>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="C" style="margin-top: 30px; ">
+                    <h5 class="fw-bold text-black mb-4">C</h5>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="B" style="margin-top: 40px; ">
+                    <h5 class="fw-bold text-black mb-4">B</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="A" style="margin-top: 50px; ">
+                    <h5 class="fw-bold text-black mb-4">A</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seat-section">
+            <h4 class="fw-bold text-black">Section 2</h4><br><br>
+            <div class="seat-grid ">
+                <div class="F">
+                    <h5 class="fw-bold text-black mb-4">F</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="E">
+                    <h5 class="fw-bold text-black mb-4">E</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="D">
+                    <h5 class="fw-bold text-black mb-4">D</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="C">
+                    <h5 class="fw-bold text-black mb-4">C</h5>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="B">
+                    <h5 class="fw-bold text-black mb-4">B</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="A">
+                    <h5 class="fw-bold text-black mb-4">A</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seat-section">
+            <h4 class="fw-bold text-black">Section 3</h4><br><br>
+            <div class="seat-grid ">
+                <div class="A" style="margin-top : 50px">
+                    <h5 class="fw-bold text-black mb-4">A</h5>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="B" style="margin-top: 40px;">
+                    <h5 class="fw-bold text-black mb-4">B</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="C" style="margin-top: 30px">
+                    <h5 class="fw-bold text-black mb-4">C</h5>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="D" style="margin-top: 20px; ">
+                    <h5 class="fw-bold text-black mb-4">D</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="E" style="margin-top: 10px; ">
+                    <h5 class="fw-bold text-black mb-4">E</h5>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Premium.svg" class="seat-icon" alt="Premium seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+                <div class="F">
+                    <h5 class="fw-bold text-black mb-4">F</h5>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">1</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">2</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/VIP.svg" class="seat-icon" alt="VIP seat">
+                        <span class="seat-number">3</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">4</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">5</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Reserved.svg" class="seat-icon" alt="Reserved seat">
+                        <span class="seat-number">6</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">7</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">8</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">9</span>
+                    </div>
+                    <div class="seat">
+                        <img src="../media/Available.svg" class="seat-icon" alt="Available seat">
+                        <span class="seat-number">10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bottom-bar">
+        <div class="fw-semibold">2 seat/s selected ₱ 300.00</div>
+        <button class="remove-btn">Remove All</button>
+        <button class="cart-btn" id="buyBtn">Buy Ticket</button>
+    </div>
+    <script src="../JS/ticketStore.js"></script>
+    <script src="../JS/concert.js"></script>
+    <script src="../JS/main.js"></script>
+    <br><br><br><br><br>
+</body>
+
+</html>

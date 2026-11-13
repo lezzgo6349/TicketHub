@@ -1,0 +1,58 @@
+#search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-icon-img {
+    width: 24px;
+    height: 24px;
+    filter: invert(56%) sepia(93%) saturate(400%) hue-rotate(130deg);
+    transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+
+#search-icon:hover .search-icon-img {
+    transform: scale(1.1);
+    filter: invert(24%) sepia(89%) saturate(4155%) hue-rotate(331deg) brightness(101%) contrast(102%);
+}
+
+body{
+    background-color: #E0E1DD;
+}
+
+.sec-bg{
+ background-color: #1A1A40;
+}
+
+.cont-hover{
+    transition: transform 0.1s ease;
+}
+.cont-hover:hover {
+    transform: scale(1.01);
+}
+
+.custom-btn {
+    background-color: #1A1A40;
+    color: #F1F1F1;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover {
+    background-color: #FF2E63;
+    color: #F1F1F1;
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TicketHub | Ticket records</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="../media/tickets-two.svg">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/homepage_style.css">
+    <link rel="stylesheet" href="../CSS/table_style.css">
+</head>
+
+<body class="page-app">
+    <header class="page-hero">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <div>
+                    <h1 id="pageTitle" class="mb-1">Customer tickets</h1>
+                    <p id="pageSubtitle" class="lead mb-0"></p>
+                </div>
+                <div class="admin-toolbar d-flex flex-wrap gap-2">
+                    <a href="user_table.html?view=pending" class="btn btn-sm custom-btn rounded-4">Pending queue</a>
+                    <a href="table.html" class="btn btn-sm btn-outline-light rounded-4">← Customer list</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container page-shell">
+        <div id="pendingSection" class="d-none">
+            <div class="table-wrap">
+                <table class="table table-striped mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Customer</th>
+                            <th scope="col">Event</th>
+                            <th scope="col">Seats</th>
+                            <th scope="col">Sections</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Concert date</th>
+                            <th scope="col">Transaction date</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pendingTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="userSection" class="d-none">
+            <div class="table-wrap">
+                <table class="table table-striped mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Event</th>
+                            <th scope="col">Seats</th>
+                            <th scope="col">Sections</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Concert date</th>
+                            <th scope="col">Transaction date</th>
+                            <th scope="col"> Accept / Reject </th>
+                        </tr>
+                    </thead>
+                    <tbody id="ticketTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/ticketStore.js"></script>
+    <script src="../JS/user_table.js"></script>
+</body>
+
+</html>
